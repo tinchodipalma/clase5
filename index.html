@@ -2,22 +2,51 @@
 <html>
   <head>
     <title>Mi titulo</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 10%;
+      }
+
+      img {
+        background-color: red;
+      }
+
+      .header-link {
+        margin-left: auto;
+      }
+
+      .header-link a {
+        color: white;
+      }
+    </style>
   </head>
 
   <body>
     <header>
-      <img
-        src="./images/logo.png"
-        alt="Logo de mi página"
-        style="background-color: red"
-      />
+      <div class="header-logo">
+        <img src="./images/logo.png" alt="Logo de mi página" />
+      </div>
 
-      Mi página de ejemplo
+      <div class="header-title">Mi página de ejemplo</div>
 
-      <a href="https://github.com/tinchodipalma"> Github de Tincho </a>
+      <div class="header-link">
+        <a href="https://github.com/tinchodipalma"> Github de Tincho </a>
+      </div>
     </header>
 
-    <main>Como estas</main>
+    <main>
+      <a href="https://www.institutoacc.com.ar">Instituto</a>
+    </main>
 
     <footer>Nos vemos</footer>
   </body>
