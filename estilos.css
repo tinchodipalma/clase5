@@ -8,7 +8,7 @@ header {
   color: white;
   display: flex;
   flex-direction: row;
-  padding: 10px 10%;
+  padding: 10px;
 }
 
 img {
@@ -25,9 +25,10 @@ img {
 
 main {
   display: grid;
-  grid: auto / 7fr 3fr;
+  grid: auto / 1fr;
   column-gap: 10px;
-  padding: 10px 10%;
+  row-gap: 10px;
+  padding: 10px;
 }
 
 .main-col {
@@ -37,4 +38,15 @@ main {
 
 .main-col:nth-child(2) {
   background-color: pink;
+}
+
+@media (min-width: 992px) {
+  main {
+    grid: auto / 7fr 3fr;
+    padding: 10px 10%;
+  }
+
+  header {
+    padding: 10px 10%;
+  }
 }
