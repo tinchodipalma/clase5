@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10%;
+}
+
+img {
+  background-color: red;
+}
+
+.header-link {
+  margin-left: auto;
+}
+
+.header-link a {
+  color: white;
+}
+
+main {
+  display: grid;
+  grid: auto / 7fr 3fr;
+  column-gap: 10px;
+  padding: 10px 10%;
+}
+
+.main-col {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.main-col:nth-child(2) {
+  background-color: pink;
+}
